@@ -1,0 +1,65 @@
+<%= form_for(@package) do |f| %>
+  <% if @package.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@package.errors.count, "error") %> prohibited this package from being saved:</h2>
+
+      <ul>
+      <% @package.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :weight %><br />
+    <%= f.number_field :weight %>
+  </div>
+  <div class="field">
+    <%= f.label :length %><br />
+    <%= f.number_field :length %>
+  </div>
+  <div class="field">
+    <%= f.label :breadth %><br />
+    <%= f.number_field :breadth %>
+  </div>
+  <div class="field">
+    <%= f.label :height %><br />
+    <%= f.number_field :height %>
+  </div>
+  <div class="field">
+    <%= f.label :maxDate %><br />
+    <%= f.date_select :maxDate %>
+  </div>
+  <div class="field">
+    <%= f.label :maxtTime %><br />
+    <%= f.time_select :maxtTime %>
+  </div>
+  <div class="field">
+    <%= f.label :receiverName %><br />
+    <%= f.text_field :receiverName %>
+  </div>
+  <div class="field">
+    <%= f.label :receiverPhone %><br />
+    <%= f.text_field :receiverPhone %>
+  </div>
+  <div class="field">
+    <%= f.label :deliveryAddress %><br />
+    <%= f.text_field :deliveryAddress %>
+  </div>
+  <div class="field">
+    <%= f.label :shipper_id %><br />
+    <%= f.number_field :shipper_id %>
+  </div>
+  <div class="field">
+    <%= f.label :deliverer_id %><br />
+    <%= f.number_field :deliverer_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,35 @@
+<h1>Listing deliverers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Pwdhash</th>
+    <th>Refid</th>
+    <th>Creditcard</th>
+    <th>Rating</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @deliverers.each do |deliverer| %>
+  <tr>
+    <td><%= deliverer.name %></td>
+    <td><%= deliverer.address %></td>
+    <td><%= deliverer.email %></td>
+    <td><%= deliverer.pwdHash %></td>
+    <td><%= deliverer.refID %></td>
+    <td><%= deliverer.creditcard %></td>
+    <td><%= deliverer.rating %></td>
+    <td><%= link_to 'Show', deliverer %></td>
+    <td><%= link_to 'Edit', edit_deliverer_path(deliverer) %></td>
+    <td><%= link_to 'Destroy', deliverer, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Deliverer', new_deliverer_path %>

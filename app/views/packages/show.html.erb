@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @package.description %>
+</p>
+
+<p>
+  <b>Weight:</b>
+  <%= @package.weight %>
+</p>
+
+<p>
+  <b>Length:</b>
+  <%= @package.length %>
+</p>
+
+<p>
+  <b>Breadth:</b>
+  <%= @package.breadth %>
+</p>
+
+<p>
+  <b>Height:</b>
+  <%= @package.height %>
+</p>
+
+<p>
+  <b>Maxdate:</b>
+  <%= @package.maxDate %>
+</p>
+
+<p>
+  <b>Maxttime:</b>
+  <%= @package.maxtTime %>
+</p>
+
+<p>
+  <b>Receivername:</b>
+  <%= @package.receiverName %>
+</p>
+
+<p>
+  <b>Receiverphone:</b>
+  <%= @package.receiverPhone %>
+</p>
+
+<p>
+  <b>Deliveryaddress:</b>
+  <%= @package.deliveryAddress %>
+</p>
+
+<p>
+  <b>Shipper:</b>
+  <%= @package.shipper_id %>
+</p>
+
+<p>
+  <b>Deliverer:</b>
+  <%= @package.deliverer_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_package_path(@package) %> |
+<%= link_to 'Back', packages_path %>

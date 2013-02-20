@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @shipper.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @shipper.address %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @shipper.email %>
+</p>
+
+<p>
+  <b>Pwdhash:</b>
+  <%= @shipper.pwdHash %>
+</p>
+
+<p>
+  <b>Creditcard:</b>
+  <%= @shipper.creditcard %>
+</p>
+
+
+<%= link_to 'Edit', edit_shipper_path(@shipper) %> |
+<%= link_to 'Back', shippers_path %>

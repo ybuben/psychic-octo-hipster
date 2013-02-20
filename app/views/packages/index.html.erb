@@ -1,0 +1,45 @@
+<h1>Listing packages</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Weight</th>
+    <th>Length</th>
+    <th>Breadth</th>
+    <th>Height</th>
+    <th>Maxdate</th>
+    <th>Maxttime</th>
+    <th>Receivername</th>
+    <th>Receiverphone</th>
+    <th>Deliveryaddress</th>
+    <th>Shipper</th>
+    <th>Deliverer</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @packages.each do |package| %>
+  <tr>
+    <td><%= package.description %></td>
+    <td><%= package.weight %></td>
+    <td><%= package.length %></td>
+    <td><%= package.breadth %></td>
+    <td><%= package.height %></td>
+    <td><%= package.maxDate %></td>
+    <td><%= package.maxtTime %></td>
+    <td><%= package.receiverName %></td>
+    <td><%= package.receiverPhone %></td>
+    <td><%= package.deliveryAddress %></td>
+    <td><%= package.shipper_id %></td>
+    <td><%= package.deliverer_id %></td>
+    <td><%= link_to 'Show', package %></td>
+    <td><%= link_to 'Edit', edit_package_path(package) %></td>
+    <td><%= link_to 'Destroy', package, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Package', new_package_path %>

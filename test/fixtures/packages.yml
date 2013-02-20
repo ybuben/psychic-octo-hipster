@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  description: MyText
+  weight: 1
+  length: 1
+  breadth: 1
+  height: 1
+  maxDate: 2013-02-18
+  maxtTime: 2013-02-18 20:04:29
+  receiverName: MyString
+  receiverPhone: MyString
+  deliveryAddress: MyString
+  shipper_id: 1
+  deliverer_id: 1
+
+two:
+  description: MyText
+  weight: 1
+  length: 1
+  breadth: 1
+  height: 1
+  maxDate: 2013-02-18
+  maxtTime: 2013-02-18 20:04:29
+  receiverName: MyString
+  receiverPhone: MyString
+  deliveryAddress: MyString
+  shipper_id: 1
+  deliverer_id: 1

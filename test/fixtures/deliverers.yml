@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  address: MyString
+  email: MyString
+  pwdHash: MyString
+  refID: 1
+  creditcard: 1
+  rating: 1.5
+
+two:
+  name: MyString
+  address: MyString
+  email: MyString
+  pwdHash: MyString
+  refID: 1
+  creditcard: 1
+  rating: 1.5

@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @deliverer.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @deliverer.address %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @deliverer.email %>
+</p>
+
+<p>
+  <b>Pwdhash:</b>
+  <%= @deliverer.pwdHash %>
+</p>
+
+<p>
+  <b>Refid:</b>
+  <%= @deliverer.refID %>
+</p>
+
+<p>
+  <b>Creditcard:</b>
+  <%= @deliverer.creditcard %>
+</p>
+
+<p>
+  <b>Rating:</b>
+  <%= @deliverer.rating %>
+</p>
+
+
+<%= link_to 'Edit', edit_deliverer_path(@deliverer) %> |
+<%= link_to 'Back', deliverers_path %>
