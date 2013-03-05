@@ -1,0 +1,31 @@
+<h1>Listing shippers</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Address</th>
+    <th>Email</th>
+    <th>Pwdhash</th>
+    <th>Creditcard</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @shippers.each do |shipper| %>
+  <tr>
+    <td><%= shipper.name %></td>
+    <td><%= shipper.address %></td>
+    <td><%= shipper.email %></td>
+    <td><%= shipper.pwdHash %></td>
+    <td><%= shipper.creditcard %></td>
+    <td><%= link_to 'Show', shipper %></td>
+    <td><%= link_to 'Edit', edit_shipper_path(shipper) %></td>
+    <td><%= link_to 'Destroy', shipper, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Shipper', new_shipper_path %>

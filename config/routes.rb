@@ -1,5 +1,8 @@
 Shipme2::Application.routes.draw do
-  root :to => 'shippers#index'
+  root :to => 'front_shipper#index'
+  
+get "front_shipper#index", as: :front_shipper
+
   resources :deliverers
 
 
@@ -8,6 +11,7 @@ Shipme2::Application.routes.draw do
 
   resources :packages
 
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
